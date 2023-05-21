@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:first_app/gradient_container.dart';
+
+
 void main() {
   runApp(MyApp());
 }
@@ -9,14 +12,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hi Bye!'),
-        ),
+        body: GradientContainer( 
+          Color.fromRGBO(1, 63, 39, 1),
+          Color.fromRGBO(194, 245, 224, 1),
+          Color.fromRGBO(6, 54, 16, 1)
+          ),
       ),
     );
   }
 }
-
 
 
 
